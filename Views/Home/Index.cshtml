@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Quote Yourself";
+}
+
+<h1>Welcome to Quote Yourself!</h1>
+<form action="process" method="post">
+    <p>Your name: <input type="text" name="name"></p>
+    <p>Your quote:</p>
+    <p><textarea name="quote" cols="30" rows="10"></textarea></p>
+    <p>
+        <button type="submit">Add my quote!</button>
+    </p>
+</form>
+<a href="quotes"><button>Skip to quotes!</button></a>

@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Quote Wall";
+}
+<h1>Here are the awesome quotes!</h1>
+
+@{
+    foreach(var i in ViewBag.quotes)
+    {
+        <p>"@i["quote"]"</p>
+        <p>- @i["name"] at @i["created"].ToString("hh:mmtt MMMM dd yyyy")</p>
+        <hr>
+    }
+}
+<a href="/"><button>Back</button></a>
